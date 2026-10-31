@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloween CSS Animations</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎃</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap hero">
+    <p class="eyebrow">Pure HTML &amp; CSS</p>
+    <h1>Halloween Animations</h1>
+    <p class="lede">Six spooky scenes, from a drifting ghost to a haunted house. Hover each one, then flip the switch and turn a sunny day into a spooky night.</p>
+    <p class="pill">
+      <i class="dot" aria-hidden="true"></i>
+      <span class="day-only">Daylight</span>
+      <span class="night-only">Spooky night</span>
+    </p>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="group-label">Beginner · about 15 minutes</p>
+      <div class="grid three">
+        <article class="card">
+          <div class="card-head">
+            <span class="num">01</span>
+            <div>
+              <h2>Floating Ghost</h2>
+              <p>Hover and it fades out.</p>
+            </div>
+          </div>
+          <div class="stage ghost-stage">
+            <div class="ghost">
+              <div class="face">
+                <div class="eyes">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="smile"></div>
+              </div>
+              <div class="scallops" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <p class="hint">Hover</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <span class="num">02</span>
+            <div>
+              <h2>Jack-o'-lantern</h2>
+              <p>A candle flickering inside.</p>
+            </div>
+          </div>
+          <div class="stage pumpkin-stage">
+            <div class="pumpkin">
+              <div class="aura"></div>
+              <div class="lobes">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="stem"></div>
+              <div class="carve eye left"></div>
+              <div class="carve eye right"></div>
+              <div class="carve nose"></div>
+              <div class="carve mouth"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <span class="num">03</span>
+            <div>
+              <h2>Hanging Spider</h2>
+              <p>Hover the web and it drops.</p>
+            </div>
+          </div>
+          <div class="stage spider-stage">
+            <div class="web"></div>
+            <div class="silk">
+              <div class="hanger">
+                <div class="spider">
+                  <span class="leg l1"></span>
+                  <span class="leg l2"></span>
+                  <span class="leg l3"></span>
+                  <span class="leg l4"></span>
+                  <span class="leg r1"></span>
+                  <span class="leg r2"></span>
+                  <span class="leg r3"></span>
+                  <span class="leg r4"></span>
+                  <span class="spider-body"></span>
+                </div>
+              </div>
+            </div>
+            <p class="hint">Hover</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="group-label">Intermediate · about 30 minutes</p>
+      <div class="feature-head">
+        <span class="num">04</span>
+        <div>
+          <h2 id="house-title">Haunted House</h2>
+          <p>Moon, silhouette, flickering windows, and bats crossing the sky.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="scene" aria-labelledby="house-title">
+      <div class="stars" aria-hidden="true"><span></span><span></span></div>
+      <div class="moon-glow" aria-hidden="true"></div>
+      <div class="orb" aria-hidden="true">
+        <span class="rays"></span>
+        <span class="disc"></span>
+        <span class="crater c1"></span>
+        <span class="crater c2"></span>
+        <span class="crater c3"></span>
+      </div>
+
+      <div class="bat-wrap b1" aria-hidden="true">
+        <div class="bat">
+          <span class="wing left"></span>
+          <span class="body"><span class="bits"></span></span>
+          <span class="wing right"></span>
+        </div>
+      </div>
+      <div class="bat-wrap b2" aria-hidden="true">
+        <div class="bat">
+          <span class="wing left"></span>
+          <span class="body"><span class="bits"></span></span>
+          <span class="wing right"></span>
+        </div>
+      </div>
+      <div class="bat-wrap b3" aria-hidden="true">
+        <div class="bat">
+          <span class="wing left"></span>
+          <span class="body"><span class="bits"></span></span>
+          <span class="wing right"></span>
+        </div>
+      </div>
+
+      <div class="house" aria-hidden="true">
+        <div class="chimney">
+          <span class="smoke s1"></span>
+          <span class="smoke s2"></span>
+        </div>
+        <div class="tower-roof"></div>
+        <div class="tower">
+          <div class="window w3"></div>
+        </div>
+        <div class="roof"></div>
+        <div class="walls">
+          <div class="window w1"></div>
+          <div class="window w2"></div>
+          <div class="door"></div>
+        </div>
+      </div>
+
+      <div class="tomb t1" aria-hidden="true"></div>
+      <div class="tomb t2" aria-hidden="true"></div>
+      <div class="ground back"></div>
+      <div class="ground front"></div>
+      <div class="fog" aria-hidden="true"></div>
+    </section>
+
+    <div class="wrap">
+      <div class="grid two">
+        <article class="card">
+          <div class="card-head">
+            <span class="num">05</span>
+            <div>
+              <h2>Bubbling Potion</h2>
+              <p>A little loading brew.</p>
+            </div>
+          </div>
+          <div class="stage potion-stage">
+            <div class="flask">
+              <div class="cork"></div>
+              <div class="neck"></div>
+              <div class="glass">
+                <div class="liquid">
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                  <span class="bubble"></span>
+                </div>
+                <span class="shine"></span>
+              </div>
+            </div>
+            <p class="brew">Brewing<span>.</span><span>.</span><span>.</span></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <span class="num">06</span>
+            <div>
+              <h2>Trick or Treat</h2>
+              <p>Pumpkin for day, ghost for night.</p>
+            </div>
+          </div>
+          <div class="stage toggle-stage">
+            <div class="toggle-stack">
+              <label class="switch">
+                <input id="spooky" type="checkbox" checked aria-label="Spooky night">
+                <span class="track">
+                  <span class="side night-side">Trick</span>
+                  <span class="side day-side">Treat</span>
+                  <span class="knob">
+                    <span class="mini-pumpkin"></span>
+                    <span class="mini-ghost">
+                      <span class="mini-eyes"></span>
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <p class="mode-line day-only">Light mode · day</p>
+              <p class="mode-line night-only">Dark mode · spooky night</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Hover the ghost and it fades away. Hover the web and the spider drops down. Flip the switch: the pumpkin means daylight, and the ghost means a spooky night.</p>
+  </footer>
+</body>
+</html>
